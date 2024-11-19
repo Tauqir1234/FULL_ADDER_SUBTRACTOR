@@ -38,9 +38,22 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+**Full Adder:**
+
+![Screenshot 2024-11-19 184246](https://github.com/user-attachments/assets/f55aa561-95f8-4b3e-a873-6657c399f3f5)
+
+**Full Subtractor:**
+
+![Screenshot 2024-11-19 184950](https://github.com/user-attachments/assets/95504035-2296-46c8-bdf9-55840398de5b)
+
 **Procedure**
 
-Write the detailed procedure here
+1. Type the program in Quartus software.
+2. Compile and run the program.
+3. Generate the RTL schematic and save the logic diagram.
+4. Create nodes for inputs and outputs to generate the timing diagram.
+5. For different input combinations generate the timing diagram.
+
 
 **Program:**
 ***
@@ -51,7 +64,7 @@ Developed by: TAUQIR AHMED S
 RegisterNumber:24013512
 ***
 ***
-**Full Adder**
+**Full Adder:**
 
 module Full_Adder(a,b,cin,sum,carry);
 
@@ -66,7 +79,7 @@ assign carry= ( (a & b)| ( cin &(a ^ b )));
 endmodule
 ***
 ***
-**Full Subtractor**
+**Full Subtractor:**
 
 module Full_Subtractor(a,b,bin,difference,borrow);
 
